@@ -1996,7 +1996,7 @@
                       <div class="item-list">
                         <div class="avatar">
                           <img
-                            src="assets/img/chadengle.jpg"
+                            src="{{ asset('assets/assets/img/chadengle.jpg') }}"
                             alt="..."
                             class="avatar-img rounded-circle"
                           />
@@ -2014,7 +2014,7 @@
                       <div class="item-list">
                         <div class="avatar">
                           <img
-                            src="assets/img/talha.jpg"
+                            src="{{ asset('assets/assets/img/talha.jpg') }}"
                             alt="..."
                             class="avatar-img rounded-circle"
                           />
@@ -2037,7 +2037,7 @@
                 <div class="card card-post card-round">
                   <img
                     class="card-img-top"
-                    src="assets/img/blogpost.jpg"
+                    src="{{ asset('assets/assets/img/blogpost.jpg') }}"
                     alt="Card image cap"
                   />
                   <div class="card-body">
