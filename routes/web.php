@@ -11,3 +11,6 @@ Route::get('/portfolio-details', function () {
 Route::get('/service-details', function () {
     return view('service-details');
 });
+Route::get('/widgets', function () {
+    return view('widgets');
+});
