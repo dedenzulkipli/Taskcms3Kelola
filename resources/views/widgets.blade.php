@@ -2044,7 +2044,7 @@
                     <div class="d-flex">
                       <div class="avatar">
                         <img
-                          src="assets/img/profile2.jpg"
+                          src="{{ asset('assets/assets/img/profile2.jpg') }}"
                           alt="..."
                           class="avatar-img rounded-circle"
                         />
@@ -2075,12 +2075,12 @@
                 <div class="card card-profile">
                   <div
                     class="card-header"
-                    style="background-image: url('assets/img/blogpost.jpg')"
+                    style="background-image: url('{{ asset('assets/assets/img/blogpost.jpg') }}')"
                   >
                     <div class="profile-picture">
                       <div class="avatar avatar-xl">
                         <img
-                          src="assets/img/profile.jpg"
+                          src="{{ asset('assets/assets/img/profile.jpg') }}"
                           alt="..."
                           class="avatar-img rounded-circle"
                         />
@@ -2374,17 +2374,17 @@
       <!-- End Custom template -->
     </div>
     <!--   Core JS Files   -->
-    <script src="assets/js/core/jquery-3.7.1.min.js"></script>
-    <script src="assets/js/core/popper.min.js"></script>
-    <script src="assets/js/core/bootstrap.min.js"></script>
+    <script src="{{ asset('assets/assets/js/core/jquery-3.7.1.min.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/core/popper.min.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/core/bootstrap.min.js') }}"></script>
     <!-- jQuery Scrollbar -->
-    <script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <script src="{{ asset('assets/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js') }}"></script>
     <!-- jQuery Sparkline -->
-    <script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+    <script src="{{ asset('assets/assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js') }}"></script>
     <!-- Kaiadmin JS -->
-    <script src="assets/js/kaiadmin.min.js"></script>
+    <script src="{{ asset('assets/assets/js/kaiadmin.min.js') }}"></script>
     <!-- Kaiadmin DEMO methods, don't include it in your project! -->
-    <script src="assets/js/setting-demo.js"></script>
+    <script src="{{ asset('assets/assets/js/setting-demo.js') }}"></script>
     <script>
       $("#lineChart").sparkline([102, 109, 120, 99, 110, 105, 115], {
         type: "line",

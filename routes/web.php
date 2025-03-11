@@ -14,3 +14,9 @@ Route::get('/service-details', function () {
 Route::get('/widgets', function () {
     return view('widgets');
 });
+Route::get('/indexAdmin', function () {
+    return view('indexAdmin');
+});
+Route::get('/datatables', function () {
+    return view('datatables');
+});
