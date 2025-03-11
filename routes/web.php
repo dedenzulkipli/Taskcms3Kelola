@@ -2,9 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
 Route::get('/portfolio-details', function () {
     return view('portfolio-details');
 });
@@ -19,4 +19,13 @@ Route::get('/indexAdmin', function () {
 });
 Route::get('/datatables', function () {
     return view('datatables');
+});
+
+
+Route::get('coba', function() {
+    return view('admin.coba');
+});
+
+Route::get('/', function() {
+    return view('landing.index');
 });
