@@ -14,13 +14,12 @@ return new class extends Migration
         Schema::create('projects_tables', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->foreignId('client_id')->constrained('clients')->onDelete('cascade');
-            $table->string('client');
+            $table->foreignId('client_id')->constrained('clients')->onDelete('cascade')->onUpdate('cascade');
             $table->text('description');
             $table->string('tech_stack');
-            $table->year('year');
+            $table->date('date');
             $table->string('image')->nullable();
-            $table->enum('status',['Active','InActive']);
+            $table->enum('status',['Complete','Ongoing','Pending']);
             $table->timestamps();
         });
     }

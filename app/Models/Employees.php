@@ -9,10 +9,4 @@ class Employees extends Model
     //
     protected $guarded = [];
 
-    public function position()
-    {
-        return $this->belongsTo('Position', 'position_id', 'id');
-    }
-    
-
 }
