@@ -1,9 +1,15 @@
+<style>
+    .logo img {
+    max-height: 70px;
+    width: auto;
+}
+</style>
 <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
         <a href="index.html" class="logo d-flex align-items-center me-auto">
             <img src="assets/img/kelola.-removebg-preview.png" alt="Kelola.biz Logo" class="img-fluid"
-                style="height: 150%; ">
+                style="max-height: 70px; width: auto;">
         </a>
         <nav id="navmenu" class="navmenu">
             <ul>

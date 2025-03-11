@@ -11,15 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('projects_tables', function (Blueprint $table) {
+        Schema::create('blogs', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->foreignId('client_id')->constrained('clients')->onDelete('cascade');
-            $table->string('client');
-            $table->text('description');
-            $table->string('tech_stack');
-            $table->year('year');
-            $table->string('image')->nullable();
+            $table->text('content');
+            $table->foreignId('author_id')->constrained('users')->onDelete('cascade');
             $table->enum('status',['Active','InActive']);
             $table->timestamps();
         });
@@ -30,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('projects_tables');
+        Schema::dropIfExists('blogs');
     }
 };
