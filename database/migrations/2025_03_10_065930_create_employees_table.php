@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('employees', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->foreignId('position_id')->constrained('positions')->onDelete('cascade');
+            $table->string('skills');
+            $table->string('experience');
+            $table->string('photo')->nullable();
             $table->timestamps();
         });
     }

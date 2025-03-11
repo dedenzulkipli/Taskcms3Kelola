@@ -5,11 +5,14 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('index');
 // });
+Route::get('/', function () {
+    return view('landing.index');
+});
 Route::get('/portfolio-details', function () {
-    return view('portfolio-details');
+    return view('landing.portfolio-details');
 });
 Route::get('/service-details', function () {
-    return view('service-details');
+    return view('landing.service-details');
 });
 Route::get('/widgets', function () {
     return view('widgets');
@@ -28,4 +31,10 @@ Route::get('coba', function() {
 
 Route::get('/', function() {
     return view('landing.index');
+});
+Route::get('/blog-details', function () {
+    return view('landing.blog-details');
+});
+Route::get('/blog', function () {
+    return view('landing.blog');
 });
