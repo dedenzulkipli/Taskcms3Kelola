@@ -8,7 +8,7 @@ use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('index');
+    return view('welcome');
 });
 
 Route::resource('employees', EmployeesController::class);
@@ -16,11 +16,3 @@ Route::resource('service', ServiceController::class);
 Route::resource('clients', ClientsController::class);
 Route::resource('blogs', BlogsController::class);
 Route::resource('projects', ProjectsTableController::class);
-
-
-Route::get('/portfolio-details', function () {
-    return view('portfolio-details');
-});
-Route::get('/service-details', function () {
-    return view('service-details');
-});
