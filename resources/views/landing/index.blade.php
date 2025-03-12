@@ -3,86 +3,71 @@
 @section('title', 'Home')
 
 @section('content')
-<style>
-  /* Memperbaiki posisi tombol navigasi */
-  .carousel-control-prev,
-  .carousel-control-next {
-    width: 5%;
-    opacity: 0.8;
-  }
-
-  .carousel-control-prev {
-    left: -50px; /* Pindahkan ke pinggir kiri */
-  }
-
-  .carousel-control-next {
-    right: -50px; /* Pindahkan ke pinggir kanan */
-  }
-
-  /* Efek smooth */
-  .hero-img img {
-    transition: transform 0.5s ease-in-out;
-  }
-
-  .hero-img img:hover {
-    transform: scale(1.05);
-  }
-</style>
-<section id="hero" class="hero section dark-background">
-  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="container">
-          <div class="row gy-4 align-items-center">
-            <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
-              <h1>Better Solutions For Your Business</h1>
-              <p>We are a team of talented designers making websites with Bootstrap</p>
-              <div class="d-flex">
-                <a href="#about" class="btn-get-started">Get Started</a>
-                <a href="https://youtu.be/dHC7ASTT8dk?si=32dyoemO0aTV5Q9H"
-                  class="glightbox btn-watch-video d-flex align-items-center">
-                  <i class="bi bi-play-circle"></i><span>Watch Video</span>
-                </a>
-              </div>
+<section id="hero" class="hero section dark-background d-flex align-items-center justify-content-center">
+    <div class="container">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active text-center">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-lg-6">
+                            <h1>IoT Device/Hardware (Smart Sensor)</h1>
+                            <p>We are a team of talented designers making websites with Bootstrap</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#about" class="btn-get-started">Get Started</a>
+                                <a href="https://youtu.be/dHC7ASTT8dk?si=32dyoemO0aTV5Q9H"
+                                    class="glightbox btn-watch-video d-flex align-items-center">
+                                    <i class="bi bi-play-circle"></i><span>Watch Video</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="{{ asset('landing/assets/img/hero-img.png') }}" class="img-fluid animated" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item text-center">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-lg-6">
+                            <h1>Grow Your Business With Us</h1>
+                            <p>We help businesses reach their full potential with modern solutions.</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#about" class="btn-get-started">Get Started</a>
+                                <a href="https://youtu.be/dHC7ASTT8dk?si=32dyoemO0aTV5Q9H"
+                                    class="glightbox btn-watch-video d-flex align-items-center">
+                                    <i class="bi bi-play-circle"></i><span>Watch Video</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="{{ asset('landing/assets/img/hero-img.png') }}" class="img-fluid animated" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item text-center">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-lg-6">
+                            <h1>Grow Your Business With De</h1>
+                            <p>We help businesses reach their full potential with modern solutions.</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#about" class="btn-get-started">Get Started</a>
+                                <a href="https://youtu.be/dHC7ASTT8dk?si=32dyoemO0aTV5Q9H"
+                                    class="glightbox btn-watch-video d-flex align-items-center">
+                                    <i class="bi bi-play-circle"></i><span>Watch Video</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="{{ asset('landing/assets/img/hero-img.png') }}" class="img-fluid animated" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-6 order-1 order-lg-2 hero-img text-end" data-aos="zoom-out" data-aos-delay="200">
-              <img src="{{ asset('landing/assets/img/hero-img.png') }}" class="img-fluid animated" alt="">
-            </div>
-          </div>
         </div>
-      </div>
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="container">
-          <div class="row gy-4 align-items-center">
-            <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
-              <h1>Innovative Solutions for Your Brand</h1>
-              <p>We provide modern and creative designs for your brand</p>
-              <div class="d-flex">
-                <a href="#about" class="btn-get-started">Get Started</a>
-                <a href="https://youtu.be/dHC7ASTT8dk?si=32dyoemO0aTV5Q9H"
-                  class="glightbox btn-watch-video d-flex align-items-center">
-                  <i class="bi bi-play-circle"></i><span>Watch Video</span>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-6 order-1 order-lg-2 hero-img text-end" data-aos="zoom-out" data-aos-delay="200">
-              <img src="{{ asset('landing/assets/img/hero-img-2.png') }}" class="img-fluid animated" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-    <!-- Navigasi -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    </button>
-  </div>
 </section>
+
 <!-- Clients Section -->
 <section id="clients" class="clients section light-background">
 
@@ -431,21 +416,7 @@
 
 
 
-<div class="container">
 
-    <div class="row" data-aos="zoom-in" data-aos-delay="100">
-        <div class="col-xl-9 text-center text-xl-start">
-            <h3>Call To Action</h3>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                laborum.</p>
-        </div>
-        <div class="col-xl-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Call To Action</a>
-        </div>
-    </div>
-
-</div>
 
 </section><!-- /Call To Action Section -->
 
@@ -856,8 +827,9 @@
             </div>
 
             <div class="col-lg-7">
-                <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+                <form action="{{ route('contacts.store') }}" method="post" class="php-email-form" data-aos="fade-up"
                     data-aos-delay="200">
+                    @csrf
                     <div class="row gy-4">
 
                         <div class="col-md-6">
@@ -870,10 +842,7 @@
                             <input type="email" class="form-control" name="email" id="email-field" required="">
                         </div>
 
-                        <div class="col-md-12">
-                            <label for="subject-field" class="pb-2">Subject</label>
-                            <input type="text" class="form-control" name="subject" id="subject-field" required="">
-                        </div>
+                        
 
                         <div class="col-md-12">
                             <label for="message-field" class="pb-2">Message</label>
@@ -890,7 +859,7 @@
                         </div>
 
                     </div>
-                </form>
+                    </>
             </div><!-- End Contact Form -->
 
         </div>

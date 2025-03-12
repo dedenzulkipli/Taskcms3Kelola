@@ -7,9 +7,12 @@
 @section('content')
 
 <style>
-  .service-details-page .navbar {
-    background-color: #fff !important;
+  /* Pastikan navbar tetap terlihat dan konten tidak ketumpuk */
+.service-details-page .page-title {
+    padding-top: 100px; /* Sesuaikan dengan tinggi navbar */
+    margin-top: 20px; /* Tambahkan jarak ekstra jika perlu */
 }
+
 </style>
 
  <!-- Page Title -->
@@ -17,7 +20,7 @@
       <div class="container">
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li class="current">Service Details</li>
           </ol>
         </nav>
@@ -42,7 +45,7 @@
           </div>
 
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/services/services-4.webp" alt="" class="img-fluid services-img">
+            <img src="landing/assets/img/services/services-4.webp" alt="" class="img-fluid services-img">
             <h3>Temporibus et in vero dicta aut eius lidero plastis trand lined voluptas dolorem ut voluptas</h3>
             <p>
               Blanditiis voluptate odit ex error ea sed officiis deserunt. Cupiditate non consequatur et doloremque consequuntur. Accusantium labore reprehenderit error temporibus saepe perferendis fuga doloribus vero. Qui omnis quo sit. Dolorem architecto eum et quos deleniti officia qui.
