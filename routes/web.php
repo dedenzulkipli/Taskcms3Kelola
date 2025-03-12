@@ -15,14 +15,37 @@ Route::get('/service-details', function () {
     return view('landing.service-details');
 });
 Route::get('/widgets', function () {
-    return view('widgets');
+    return view('admin.widgets');
 });
-Route::get('/indexAdmin', function () {
-    return view('indexAdmin');
+Route::get('/dashboard', function () {
+    return view('admin.dashboard');
 });
 Route::get('/datatables', function () {
-    return view('datatables');
+    return view('admin.datatables');
 });
+Route::get('/dataservice', function () {
+    return view('admin.dataservices');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Route::get('coba', function() {
