@@ -7,10 +7,6 @@ use App\Http\Controllers\ProjectsTableController;
 use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::resource('employees', EmployeesController::class);
 Route::resource('service', ServiceController::class);
 Route::resource('clients', ClientsController::class);
