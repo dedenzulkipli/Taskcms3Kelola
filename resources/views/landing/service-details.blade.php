@@ -1,4 +1,4 @@
-@extends('template.layout')
+@extends('landing.template.layout')
 
 @section('title', 'Service Details')
 
