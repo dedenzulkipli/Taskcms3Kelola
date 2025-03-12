@@ -15,8 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('content');
-            $table->foreignId('author_id')->constrained('users')->onDelete('cascade');
-            $table->enum('status',['Active','InActive']);
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
