@@ -15,7 +15,7 @@ class EmployeesController extends Controller
     public function index()
     {
         $employees = Employees::with('user')->get();
-        return view('employees.index', compact('employees'));
+        return view('admin.employees.index', compact('employees'));
     }
 
     /**
@@ -23,7 +23,7 @@ class EmployeesController extends Controller
      */
     public function create()
     {
-        return view('employees.create');
+        return view('admin.employees.create');
     }
 
     /**
@@ -70,7 +70,7 @@ class EmployeesController extends Controller
      */
     public function show(Employees $employee)
     {
-        return view('employees.show', compact('employee'));
+        return view('admin.employees.show', compact('employee'));
     }
 
     /**
@@ -78,7 +78,7 @@ class EmployeesController extends Controller
      */
     public function edit(Employees $employee)
     {
-        return view('employees.edit', compact('employee'));
+        return view('admin.employees.edit', compact('employee'));
     }
 
     /**
@@ -99,6 +99,7 @@ class EmployeesController extends Controller
         $employee->user->update([
             'name' => $request->name,
             'email' => $request->email,
+            'password' => Hash::make($request->password),
         ]);
 
         // Upload Foto jika ada perubahan

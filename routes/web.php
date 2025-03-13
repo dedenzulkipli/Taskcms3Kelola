@@ -13,6 +13,7 @@ Route::resource('service', ServiceController::class);
 Route::resource('clients', ClientsController::class);
 Route::resource('blogs', BlogsController::class);
 Route::resource('projects', ProjectsTableController::class);
+
 Route::resource('contacts', ContactController::class);
 
 Route::get('/', function () {
@@ -30,3 +31,8 @@ Route::get('/blog-details', function () {
 Route::get('/blog', function () {
     return view('landing.blog');
 });
+
+Route::get('/dashboard', function () {
+    return view('admin.indexAdmin');
+});
+

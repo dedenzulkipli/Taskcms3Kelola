@@ -15,7 +15,7 @@ class ProjectsTableController extends Controller
     public function index()
     {
         $projects = ProjectsTable::with('client')->get();
-        return view('projects.index', compact('projects'));
+        return view('admin.projects.index', compact('projects'));
     }
 
     /**
@@ -24,7 +24,7 @@ class ProjectsTableController extends Controller
     public function create()
     {
         $clients = Clients::all(); // Ambil data client untuk select option
-        return view('projects.create', compact('clients'));
+        return view('admin.projects.create', compact('clients'));
     }
 
     /**
@@ -66,7 +66,7 @@ class ProjectsTableController extends Controller
      */
     public function show(ProjectsTable $project)
     {
-        return view('projects.show', compact('project'));
+        return view('admin.projects.show', compact('project'));
     }
 
     /**
@@ -75,7 +75,7 @@ class ProjectsTableController extends Controller
     public function edit(ProjectsTable $project)
     {
         $clients = Clients::all();
-        return view('projects.edit', compact('project', 'clients'));
+        return view('admin.projects.edit', compact('project', 'clients'));
     }
 
     /**

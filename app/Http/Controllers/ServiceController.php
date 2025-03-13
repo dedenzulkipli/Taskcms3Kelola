@@ -13,7 +13,7 @@ class ServiceController extends Controller
     public function index()
     {
         $services = Service::all();
-        return view('services.index', compact('services'));
+        return view('admin.service.index', compact('services'));
     }
 
     /**
@@ -21,7 +21,7 @@ class ServiceController extends Controller
      */
     public function create()
     {
-        return view('services.create');
+        return view('admin.service.create');
     }
 
     /**
@@ -37,7 +37,7 @@ class ServiceController extends Controller
 
         Service::create($request->all());
 
-        return redirect()->route('services.index')->with('success', 'Service berhasil ditambahkan.');
+        return redirect()->route('service.index')->with('success', 'Service berhasil ditambahkan.');
     }
 
     /**
@@ -45,7 +45,7 @@ class ServiceController extends Controller
      */
     public function show(Service $service)
     {
-        return view('services.show', compact('service'));
+        return view('admin.service.show', compact('service'));
     }
 
     /**
@@ -53,7 +53,7 @@ class ServiceController extends Controller
      */
     public function edit(Service $service)
     {
-        return view('services.edit', compact('service'));
+        return view('admin.service.edit', compact('service'));
     }
 
     /**
