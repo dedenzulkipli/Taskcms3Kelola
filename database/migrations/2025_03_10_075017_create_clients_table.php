@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('clients', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('contact_info'); // Bisa email atau nomor telepon
+            $table->string('email')->unique();
             $table->string('company')->nullable(); 
             $table->timestamps();
         });

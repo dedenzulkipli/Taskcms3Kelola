@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('services', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('category');
-            $table->text('features'); // Bisa berisi JSON atau teks panjang
+            $table->text('description');
+            $table->string('tech_stack');
             $table->decimal('price', 10, 2);
             $table->timestamps();
         });
