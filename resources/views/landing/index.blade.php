@@ -3,9 +3,27 @@
 @section('title', 'Home')
 
 @section('content')
+<style>
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    /* Atur lebar area klik */
+}
+
+.carousel-control-prev {
+    left: -200px;
+    /* Geser tombol panah kiri lebih ke luar */
+}
+
+.carousel-control-next {
+    right: -200px;
+    /* Geser tombol panah kanan lebih ke luar */
+}
+</style>
 <section id="hero" class="hero section dark-background d-flex align-items-center justify-content-center">
     <div class="container">
-        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="false">
+            <!-- Nonaktifkan auto slide -->
             <div class="carousel-inner">
                 <!-- Slide 1 -->
                 <div class="carousel-item active text-center">
@@ -45,6 +63,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Slide 3 -->
                 <div class="carousel-item text-center">
                     <div class="row align-items-center justify-content-center">
                         <div class="col-lg-6">
@@ -64,9 +83,22 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Tombol Navigasi -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
         </div>
     </div>
 </section>
+
+
 
 <!-- Clients Section -->
 <section id="clients" class="clients section light-background">
@@ -842,7 +874,7 @@
                             <input type="email" class="form-control" name="email" id="email-field" required="">
                         </div>
 
-                        
+
 
                         <div class="col-md-12">
                             <label for="message-field" class="pb-2">Message</label>
@@ -859,7 +891,7 @@
                         </div>
 
                     </div>
-                    </>
+                </form>
             </div><!-- End Contact Form -->
 
         </div>
@@ -867,5 +899,6 @@
     </div>
 
 </section><!-- /Contact Section -->
+
 
 @endsection
