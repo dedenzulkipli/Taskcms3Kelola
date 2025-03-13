@@ -1,4 +1,4 @@
-@extends('template.layout')
+@extends('landing.template.layout')
 
 @section('title', 'Blog')
 
@@ -16,7 +16,7 @@
     <div class="container">
         <nav class="breadcrumbs">
             <ol>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li class="current">Blog</li>
             </ol>
         </nav>

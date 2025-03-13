@@ -1,11 +1,19 @@
-@extends('template.layout')
+@extends('landing.template.layout')
 
 @section('title', 'Portfolio Details')
 
-@section('body-class', 'portfolio-page')  {{-- Menyesuaikan body class jika perlu --}}
+@section('body-class', 'portfolio-page') {{-- Menyesuaikan body class jika perlu --}}
 
 @section('content')
-
+<style>
+/* Tambahkan jarak agar tidak tertutup navbar */
+.page-title {
+    padding-top: 100px;
+    /* Sesuaikan dengan tinggi navbar */
+    margin-top: 20px;
+    /* Bisa diubah sesuai kebutuhan */
+}
+</style>
 <!-- Page Title -->
 <div class="page-title" data-aos="fade">
     <div class="container">
@@ -27,10 +35,10 @@
                 <div class="portfolio-details-slider swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="{{ asset('assets/img/portfolio/portfolio-1.webp') }}" alt="">
+                            <img src="{{ asset('landing/assets/img/portfolio/portfolio-1.webp') }}" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="{{ asset('assets/img/portfolio/portfolio-10.webp') }}" alt="">
+                            <img src="{{ asset('landing/assets/img/portfolio/portfolio-10.webp') }}" alt="">
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>

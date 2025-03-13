@@ -1,4 +1,4 @@
-@extends('template.layout')
+@extends('landing.template.layout')
 
 @section('title', 'Blog Details')
 
@@ -19,7 +19,7 @@
     <div class="container">
         <nav class="breadcrumbs">
             <ol>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li class="current">Blog Details</li>
             </ol>
         </nav>
@@ -39,7 +39,7 @@
                     <article class="article">
 
                         <div class="hero-img" data-aos="zoom-in">
-                            <img src="assets/img/blog/blog-post-3.webp" alt="Featured blog image" class="img-fluid" loading="lazy">
+                            <img src="landing/assets/img/blog/blog-post-3.webp" alt="Featured blog image" class="img-fluid" loading="lazy">
                             <div class="meta-overlay">
                                 <div class="meta-categories">
                                     <a href="#" class="category">Web Development</a>
@@ -56,7 +56,7 @@
 
                                 <div class="author-info">
                                     <div class="author-details">
-                                        <img src="assets/img/person/person-f-8.webp" alt="Author" class="author-img">
+                                        <img src="landing/assets/img/person/person-f-8.webp" alt="Author" class="author-img">
                                         <div class="info">
                                             <h4>Michael Chen</h4>
                                             <span class="role">Senior Web Developer</span>
@@ -80,7 +80,7 @@
                                 </p>
 
                                 <div class="content-image right-aligned">
-                                    <img src="assets/img/blog/blog-hero-2.webp" class="img-fluid" alt="Modern web development tools" loading="lazy">
+                                    <img src="/landing/assets/img/blog/blog-hero-2.webp" class="img-fluid" alt="Modern web development tools" loading="lazy">
                                     <figcaption>Modern development environments emphasize collaboration and efficiency</figcaption>
                                 </div>
 
