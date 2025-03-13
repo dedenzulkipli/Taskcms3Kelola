@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Kaiadmin - Bootstrap 5 Admin Dashboard</title>
     <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport" />
-    <link rel="icon" href="{{ asset('admin/img/kaiadmin/favicon.ico') }}" type="image/x-icon" />
+    <link rel="icon" href="{{ asset('assets/assets/img/kaiadmin/favicon.ico') }}" type="image/x-icon" />
 
     <!-- Fonts and icons -->
-    <script src="{{ asset('admin/js/plugin/webfont/webfont.min.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/plugin/webfont/webfont.min.js') }}"></script>
     <script>
         WebFont.load({
             google: {
@@ -30,12 +30,21 @@
     </script>
 
     <!-- CSS Files -->
+<<<<<<< HEAD
     <link rel="stylesheet" href="{{ asset('admin/css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="({{ asset('admin/css/plugins.min.css') }})" />
     <link rel="stylesheet" href="{{ asset('admin/css/kaiadmin.min.css') }}" />
 
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link rel="stylesheet" href="{{ asset('admin/css/demo.css') }}" />
+=======
+    <link rel="stylesheet" href="{{ asset('assets/assets/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="({{ asset('assets/assets/css/plugins.min.css') }})" />
+    <link rel="stylesheet" href="{{ asset('assets/assets/css/kaiadmin.min.css') }}" />
+
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link rel="stylesheet" href="{{ asset('assets/assets/css/demo.css') }}" />
+>>>>>>> e3df4582d50120523e501f1ee0e7d37be5559482
 </head>
 
 <body>
@@ -46,7 +55,11 @@
                 <!-- Logo Header -->
                 <div class="logo-header" data-background-color="dark">
                     <a href="index.html" class="logo">
+<<<<<<< HEAD
                         <img src="{{ asset('admin/img/kaiadmin/logo_light.svg') }}" alt="navbar brand"
+=======
+                        <img src="{{ asset('assets/assets/img/kaiadmin/logo_light.svg') }}" alt="navbar brand"
+>>>>>>> e3df4582d50120523e501f1ee0e7d37be5559482
                             class="navbar-brand" height="20" />
                     </a>
                     <div class="nav-toggle">
@@ -97,22 +110,39 @@
                             <div class="collapse" id="base">
                                 <ul class="nav nav-collapse">
                                     <li>
+<<<<<<< HEAD
                                         <a href="{{ route('employees.index') }}">
                                             <span class="sub-item">Karyawan</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="{{route('projects.index')}}">
+=======
+                                        <a href="/datatables">
+                                            <span class="sub-item">Users</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="components/buttons.html">
+>>>>>>> e3df4582d50120523e501f1ee0e7d37be5559482
                                             <span class="sub-item">Projects</span>
                                         </a>
                                     </li>
                                     <li>
+<<<<<<< HEAD
                                         <a href="{{ route('service.index') }}">
+=======
+                                        <a href="components/gridsystem.html">
+>>>>>>> e3df4582d50120523e501f1ee0e7d37be5559482
                                             <span class="sub-item">Services</span>
                                         </a>
                                     </li>
                                     <li>
+<<<<<<< HEAD
                                         <a href="{{ route('clients.index') }}">
+=======
+                                        <a href="components/panels.html">
+>>>>>>> e3df4582d50120523e501f1ee0e7d37be5559482
                                             <span class="sub-item">Clients</span>
                                         </a>
                                     </li>
@@ -321,7 +351,11 @@
                     <!-- Logo Header -->
                     <div class="logo-header" data-background-color="dark">
                         <a href="index.html" class="logo">
+<<<<<<< HEAD
                             <img src="{{ asset('admin/img/kaiadmin/logo_light.svg') }}" alt="navbar brand"
+=======
+                            <img src="{{ asset('assets/assets/img/kaiadmin/logo_light.svg') }}" alt="navbar brand"
+>>>>>>> e3df4582d50120523e501f1ee0e7d37be5559482
                                 class="navbar-brand" height="20" />
                         </a>
                         <div class="nav-toggle">
@@ -386,7 +420,11 @@
                                             <div class="notif-center">
                                                 <a href="#">
                                                     <div class="notif-img">
+<<<<<<< HEAD
                                                         <img src="{{ asset('admin/img/jm_denis.jpg') }}"
+=======
+                                                        <img src="{{ asset('assets/assets/img/jm_denis.jpg') }}"
+>>>>>>> e3df4582d50120523e501f1ee0e7d37be5559482
                                                             alt="Img Profile" />
                                                     </div>
                                                     <div class="notif-content">
@@ -397,7 +435,11 @@
                                                 </a>
                                                 <a href="#">
                                                     <div class="notif-img">
+<<<<<<< HEAD
                                                         <img src="{{ asset('admin/img/chadengle.jpg') }}"
+=======
+                                                        <img src="{{ asset('assets/assets/img/chadengle.jpg') }}"
+>>>>>>> e3df4582d50120523e501f1ee0e7d37be5559482
                                                             alt="Img Profile" />
                                                     </div>
                                                     <div class="notif-content">
@@ -408,7 +450,11 @@
                                                 </a>
                                                 <a href="#">
                                                     <div class="notif-img">
+<<<<<<< HEAD
                                                         <img src="{{ asset('admin/img/mlane.jpg') }}"
+=======
+                                                        <img src="{{ asset('assets/assets/img/mlane.jpg') }}"
+>>>>>>> e3df4582d50120523e501f1ee0e7d37be5559482
                                                             alt="Img Profile" />
                                                     </div>
                                                     <div class="notif-content">
@@ -421,7 +467,11 @@
                                                 </a>
                                                 <a href="#">
                                                     <div class="notif-img">
+<<<<<<< HEAD
                                                         <img src="{{ asset('admin/img/talha.jpg') }}"
+=======
+                                                        <img src="{{ asset('assets/assets/img/talha.jpg') }}"
+>>>>>>> e3df4582d50120523e501f1ee0e7d37be5559482
                                                             alt="Img Profile" />
                                                     </div>
                                                     <div class="notif-content">
@@ -477,7 +527,11 @@
                                                 </a>
                                                 <a href="#">
                                                     <div class="notif-img">
+<<<<<<< HEAD
                                                         <img src="{{ asset('admin/img/profile2.jpg') }}"
+=======
+                                                        <img src="{{ asset('assets/assets/img/profile2.jpg') }}"
+>>>>>>> e3df4582d50120523e501f1ee0e7d37be5559482
                                                             alt="Img Profile" />
                                                     </div>
                                                     <div class="notif-content">
@@ -576,7 +630,11 @@
                                 <a class="dropdown-toggle profile-pic" data-bs-toggle="dropdown" href="#"
                                     aria-expanded="false">
                                     <div class="avatar-sm">
+<<<<<<< HEAD
                                         <img src="{{ asset('admin/img/profile.jpg') }}" alt="..."
+=======
+                                        <img src="{{ asset('assets/assets/img/profile.jpg') }}" alt="..."
+>>>>>>> e3df4582d50120523e501f1ee0e7d37be5559482
                                             class="avatar-img rounded-circle" />
                                     </div>
                                     <span class="profile-username">
@@ -589,7 +647,11 @@
                                         <li>
                                             <div class="user-box">
                                                 <div class="avatar-lg">
+<<<<<<< HEAD
                                                     <img src="{{ asset('admin/img/profile.jpg') }}"
+=======
+                                                    <img src="{{ asset('assets/assets/img/profile.jpg') }}"
+>>>>>>> e3df4582d50120523e501f1ee0e7d37be5559482
                                                         alt="image profile" class="avatar-img rounded" />
                                                 </div>
                                                 <div class="u-text">
@@ -714,6 +776,7 @@
         <!-- End Custom template -->
     </div>
     <!--   Core JS Files   -->
+<<<<<<< HEAD
     <script src="{{ asset('admin/js/core/jquery-3.7.1.min.js') }}"></script>
     <script src="asset('admin/js/core/popper.min.js')"></script>
     <script src="{{ asset('admin/js/core/bootstrap.min.js') }}"></script>
@@ -739,15 +802,50 @@
     <!-- jQuery Vector Maps -->
     <script src="{{ asset('admin/js/plugin/jsvectormap/jsvectormap.min.js') }}"></script>
     <script src="{{ asset('admin/js/plugin/jsvectormap/world.js') }}"></script>
+=======
+    <script src="{{ asset('assets/assets/js/core/jquery-3.7.1.min.js') }}"></script>
+    <script src="asset('assets/assets/js/core/popper.min.js')"></script>
+    <script src="{{ asset('assets/assets/js/core/bootstrap.min.js') }}"></script>
+
+    <!-- jQuery Scrollbar -->
+    <script src="{{ asset('assets/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js') }}"></script>
+
+    <!-- Chart JS -->
+    <script src="{{ asset('assets/assets/js/plugin/chart.js/chart.min.js') }}"></script>
+
+    <!-- jQuery Sparkline -->
+    <script src="{{ asset('assets/assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js') }}"></script>
+
+    <!-- Chart Circle -->
+    <script src="{{ asset('assets/assets/js/plugin/chart-circle/circles.min.js') }}"></script>
+
+    <!-- Datatables -->
+    <script src="{{ asset('assets/assets/js/plugin/datatables/datatables.min.js') }}"></script>
+
+    <!-- Bootstrap Notify -->
+    <script src="{{ asset('assets/assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js') }}"></script>
+
+    <!-- jQuery Vector Maps -->
+    <script src="{{ asset('assets/assets/js/plugin/jsvectormap/jsvectormap.min.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/plugin/jsvectormap/world.js') }}"></script>
+>>>>>>> e3df4582d50120523e501f1ee0e7d37be5559482
 
 
 
     <!-- Kaiadmin JS -->
+<<<<<<< HEAD
     <script src="{{ asset('admin/js/kaiadmin.min.js') }}"></script>
 
     <!-- Kaiadmin DEMO methods, don't include it in your project! -->
     <script src="{{ asset('admin/js/setting-demo.js') }}"></script>
     <script src="{{ asset('admin/js/demo.js') }}"></script>
+=======
+    <script src="{{ asset('assets/assets/js/kaiadmin.min.js') }}"></script>
+
+    <!-- Kaiadmin DEMO methods, don't include it in your project! -->
+    <script src="{{ asset('assets/assets/js/setting-demo.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/demo.js') }}"></script>
+>>>>>>> e3df4582d50120523e501f1ee0e7d37be5559482
     <script>
         $("#lineChart").sparkline([102, 109, 120, 99, 110, 105, 115], {
             type: "line",

@@ -51,7 +51,7 @@
                                             <a href="{{ route('service.show', $service->id) }}" class="btn btn-link btn-info btn-lg">
                                                 <i class="fa fa-eye"></i>
                                             </a>
-                                                <a href="{{ route('service.edit', $service->id) }}" class="btn btn-link btn-primary btn-lg">
+                                                <a href="{{ route('service.edit', $service->id) }}" class="b    tn btn-link btn-primary btn-lg">
                                                     <i class="fa fa-edit"></i>
                                                 </a>
                                             <form action="{{ route('service.destroy', $service->id) }}" method="POST" style="display: inline;">
